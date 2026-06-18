@@ -1,6 +1,6 @@
 <?php
 // Setelan parameter AWS RDS kelompok kamu yang sudah sukses teruji
-$host     = "dbtubescc.cony8myouvm4.us-east-1.rds.amazonaws.com";
+$host     = "dbtubescc.cony8myouvm4.us-east-1.rds.amazonaws.com"; // <-- Pastikan ini sama persis dengan Endpoint di AWS RDS kalian
 $user     = "admin";
 $password = "kelompok4";
 $database = "db_cloud";
