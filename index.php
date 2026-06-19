@@ -3,6 +3,7 @@ session_start();
 
 // Mengambil IP internal dari Web Server EC2 untuk mendeteksi identitas server
 $internal_ip = $_SERVER['SERVER_ADDR']; 
+
 $is_server_1 = (strpos($internal_ip, '25.244') !== false); 
 
 // Pengkondisian warna dan kode identitas sesuai instance untuk membuktikan Load Balancer bekerja [cite: 27, 28]
@@ -62,7 +63,7 @@ $server_id  = $is_server_1 ? "1" : "2";
 <body>
     <div class="container">
         <h1>Tugas Besar Komputasi Awan</h1>
-        <p>Aplikasi Klaster Web Server - Kelompok 4</p>
+        <p>Kelompok 4</p>
         
         <div>
             <span class="badge">WEB SERVER INSTANCE: <?php echo $server_id; ?></span>
